@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Assignment</title>
+  <link type="text/css" rel="stylesheet" href="assign09.css" />
+  <script defer src="assign09.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="assign09.html">Home</a></li>
+        <li><a href="#">Contries</a></li>
+        <li><a href="#">Classes</a></li>  
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Largest Cities</h1>
+    <p>Discover the largest cities from the following countries just with a click!</p>
+    <div class="main-container">
+      <div class="box">
+        <div>
+          <img src="united-states.png" alt="canada flag">
+          <button type="button" class="united-button" id="usa-city" name="usa-city" onclick="loadDoc('usa.txt')">USA</button>
+        </div>
+        <div>
+          <pre id="table"></pre>
+        </div>
+      </div>
+      <div class="box">
+        <div>
+          <img src="canada.png" alt="canada flag">
+          <button type="button" id="canada-city" name="canada-city" onclick="loadDoc('canada.txt')">CANADA</button>
+        </div>
+        <div>
+          <pre id="table1"></pre>
+        </div>
+      </div>
+      <div class="box">
+        <div>
+          <img src="mexico.png" alt="mexico flag">
+          <button type="button" id="mexico-city" name="mexico-city" onclick="loadDoc('mexico.txt')">MEXICO</button>
+        </div>
+        <div>
+          <pre id="table2"></pre>
+        </div>
+      </div>
+      <div class="box">
+        <div>
+          <img src="russia.png" alt="russia flag">
+          <button type="button" id="russia-city" name="russia-city" onclick="loadDoc('russia.txt')">RUSSIA</button>
+        </div>
+        <div>
+          <pre id="table3"></pre>
+        </div>
+      </div>
+    </div>
+    <div class="main-container-2">
+      <h1>List of Students</h1>
+      <div class="form">
+        <div>
+          <label>File name<input type="text" id="students" name="students" value="json.txt"></label>
+          <div id="error"></div>
+          <div id="error2"></div>
+          <button type="button" id="get_file" onclick="get_file()">Students</button>
+          <p id="output"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="paragraph-footer">&copy; 2021 - Mariana Souza - CS213 - Section 4</p>
+
+      <ul class="footer-links">
+        <li class="footer-link">Contact us:</li>
+        <li class="footer-link"><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png"
+              alt="Facebook Icon"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png"
+              alt="Instagram Icon"></a></li>
+        <li class="footer-link"><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img
+              src="../gmail.png" alt="Gmail Icon"></a></li>
+      </ul>
+    </div>
+    <div class="credits">
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

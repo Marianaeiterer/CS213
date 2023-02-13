@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mortgage, Calculator, Rate, Loan, Amount">
+  <meta name="description" content="Calculate your Mortgage in a simple and efficient way.">
+  <title>Mileage Calculator</title>
+  <link type="text/css" rel="stylesheet" href="assign12.css" />
+  <script defer src="assign12.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="assign12.html">Home</a></li>
+        <li><a href="../index.html">Assignments</a></li>
+        <li><a href="#">Save Money</a></li>
+        <li><a href="#">Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Mileage Calculator</h1>
+    <div class="main-container">
+      <div class="paragraph">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sem sit amet turpis varius posuere in
+          ut
+          elit. Sed dignissim eros eu varius vehicula. Morbi non orci sit amet lorem vulputate lobortis. Mauris
+          tincidunt,
+          augue at facilisis viverra, tortor justo pharetra sapien, ut efficitur nibh lectus pulvinar ipsum. Etiam
+          porttitor
+          ac magna eu laoreet. Suspendisse potenti. Aenean a massa luctus, euismod turpis id, dignissim odio. Quisque
+          dictum
+          dolor in mauris porta ullamcorper. Curabitur et facilisis mauris, non porta odio. Pellentesque sagittis varius
+          finibus. Pellentesque porta lacus eleifend dolor varius, in vehicula urna ultrices.</p>
+        <p>Phasellus consectetur quam mi. Nulla odio quam, placerat eget nunc eget, porttitor accumsan nulla. Maecenas
+          tincidunt sagittis sagittis. Sed arcu nisi, gravida ut molestie at, venenatis vitae elit. Nam vitae velit a
+          libero
+          malesuada egestas. Aenean interdum rhoncus imperdiet. Maecenas vestibulum sem magna, eu maximus magna
+          ultricies
+          non. Aenean vitae lacus eros. In ornare, metus at viverra faucibus, tortor justo vestibulum ex, ornare auctor
+          justo mauris a nisi.</p>
+      </div>
+      <img src="mileage.jpg" alt="Travel">
+    </div>
+    <div class="mileage-calculator">
+      <div class="calculator_form">
+        <h2>Calculator</h2>
+        <div class="definition">(Required fields are in red)</div>
+        <form>
+          <div class="container">
+            <div class="first-row">
+              <label>Start City: <input type="text" id="startCity" name="startCity" oninput="validate_startcity()" required></label>
+              <div id="error_startcity"></div>
+            </div>
+            <div class="second-row">
+              <label>Start State: <input type="text" id="startState" name="startState" maxlength="2" placeholder="UT" pattern="[A-Z]{2}" required></label>
+              <div id="error_startstate"></div>
+            </div>
+            <div class="fourth-row">
+              <label>Destination City: <input type="text" id="endCity" name="endCity" oninput="validate_endcity()" required></label>
+              <div id="error_endcity"></div>
+            </div>
+            <div class="third-row">
+              <label>Destination State: <input type="text" id="endState" name="endState" placeholder="UT" maxlength="2" pattern="[A-Z]{2}" required></label>
+              <div id="error_endstate"></div>
+            </div>
+            <div id="error"></div>
+          </div>
+          <div class="buttons">
+            <button class="button" type="button" id="calculate" onclick="validate()">Calculate</button>
+            <input class="reset-button" type="reset" id="clear" name="clear" value="Reset">
+          </div>
+          <div id="output"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="paragraph-footer">&copy; 2021 - Mariana Souza - CS213 - Section 4</p>
+
+      <ul class="footer-links">
+        <li class="footer-link">Contact us:</li>
+        <li class="footer-link"><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png"
+              alt="Facebook Icon"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png"
+              alt="Instagram Icon"></a></li>
+        <li class="footer-link"><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img
+              src="../gmail.png" alt="Gmail Icon"></a></li>
+      </ul>
+    </div>
+    <div class="credits">
+      <span>Photo by <a
+          href="https://unsplash.com/@tierramallorca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tierra
+          Mallorca</a> on <a
+          href="https://unsplash.com/s/photos/mortgage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

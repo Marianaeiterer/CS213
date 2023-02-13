@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Piano, Register, Festival">
+  <meta name="description" content="Register piano students for festival">
+  <title>Register Piano Students</title>
+  <link type="text/css" rel="stylesheet" href="assign13.css" />
+  <script defer src="assign13.js"></script>
+</head>
+
+<body onload="PHPFile()">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="assign12.html">Home</a></li>
+        <li><a href="../index.html">Assignments</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Music Festival</h1>
+    <div class="main-container">
+      <div class="paragraph">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sem sit amet turpis varius posuere in
+          ut
+          elit. Sed dignissim eros eu varius vehicula. Morbi non orci sit amet lorem vulputate lobortis. Mauris
+          tincidunt,
+          augue at facilisis viverra, tortor justo pharetra sapien, ut efficitur nibh lectus pulvinar ipsum. Etiam
+          porttitor
+          ac magna eu laoreet. Suspendisse potenti. Aenean a massa luctus, euismod turpis id, dignissim odio. Quisque
+          dictum
+          dolor in mauris porta ullamcorper. Curabitur et facilisis mauris, non porta odio. Pellentesque sagittis varius
+          finibus. Pellentesque porta lacus eleifend dolor varius, in vehicula urna ultrices.</p>
+        <p>Phasellus consectetur quam mi. Nulla odio quam, placerat eget nunc eget, porttitor accumsan nulla. Maecenas
+          tincidunt sagittis sagittis. Sed arcu nisi, gravida ut molestie at, venenatis vitae elit. Nam vitae velit a
+          libero
+          malesuada egestas. Aenean interdum rhoncus imperdiet. Maecenas vestibulum sem magna, eu maximus magna
+          ultricies
+          non. Aenean vitae lacus eros. In ornare, metus at viverra faucibus, tortor justo vestibulum ex, ornare auctor
+          justo mauris a nisi.</p>
+      </div>
+      <img src="mari-piano.jpeg" alt="Travel">
+    </div>
+    <div class="students-form">
+      <div class="registration">
+        <h2>Registration</h2>
+        <div class="definition">(Required fields are in red)</div>
+        <form id="form" onsubmit="return PHPFile()">
+          <div class="container">
+            <h3> - Performance Information</h3>
+            <div class="performance-info">
+              <div class="first-row">
+                <label>Performance Type:</label>
+                <select id="performance" name="performance" onchange="is_select(this)">
+                  <option value="Solo">Solo</option>
+                  <option value="Duet">Duet</option>
+                  <option value="Concerto">Concerto</option>
+                </select>
+              </div>
+              <div class="second-row">
+                <label>Building: <input type="text" id="location" name="location" onchange="validate_location()" oninput="validate_location()" required></label>
+                <div id="error_location"></div>
+              </div>
+              <div class="fourth-row">
+                <label>Room #: <input type="number" id="room" name="room" onchange="validate_room()" oninput="validate_room()" required></label>
+                <div id="error_room"></div>
+              </div>
+              <div class="third-time">
+                <label>Time Slot:</label> <input type="time" id="time_slot" name="time_slot" min="08:00" max="18:00" onchange="validate_time()" oninput="validate_time()"
+                  required>
+                  <div id="error_time"></div>
+              </div>
+            </div>
+            <h3> - Student Information</h3>
+            <div class="student-info">
+              <div>
+                <label>First Name <input type="text" id="first_name" name="first_name" onchange="validate_name()"
+                    oninput="validate_name()" required></label>
+                <div id="error_name"></div>
+              </div>
+              <div>
+                <label>Last Name <input type="text" id="last_name" name="last_name" onchange="validate_lname()"
+                    oninput="validate_lname()" required></label>
+                <div id="error_lname"></div>
+              </div>
+              <div>
+                <label>Student ID <input type="number" id="student_id" name="student_id" oninput="validate_id()" onchange="validate_id()" required></label>
+                <div id="error_id"></div>
+              </div>
+              <div>
+                <label>Skill Level:</label>
+                <select id="skill" name="skill">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Pre-advanced">Pre-advanced</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </div>
+              <div>
+                <label>Instrument:</label>
+                <select id="instrument" name="instrument">
+                  <option value="Piano">Piano</option>
+                  <option value="Voice">Voice</option>
+                  <option value="String">String</option>
+                  <option value="Organ">Organ</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div id="display">
+              <h4>Second Student Information:</h4>
+              <div class="student-info2">
+              <div>
+                <label>First Name <input type="text" id="first_name_2" name="first_name_2" onchange="validate_name2()"
+                    oninput="validate_name2()"></label>
+                <div id="error_name2"></div>
+              </div>
+              <div>
+                <label>Last Name <input type="text" id="last_name_2" name="last_name_2" onchange="validate_lname2()"
+                    oninput="validate_lname2()"></label>
+                    <div id="error_lname2"></div>
+              </div>
+              <div>
+                <label>Student ID <input type="number" id="student_id_2" name="student_id_2" onchange="validate_id2()"
+                  oninput="validate_id2()"></label>
+                <div id="error_id2"></div>
+              </div>
+              <div>
+                <label>Skill Level:</label>
+                <select id="skill_2" name="skill_2">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Pre-advanced">Pre-advanced</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </div>
+              <div>
+                <label>Instrument:</label>
+                <select id="instrument_2" name="instrument_2">
+                  <option value="Piano">Piano</option>
+                  <option value="Voice">Voice</option>
+                  <option value="String">String</option>
+                  <option value="Organ">Organ</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="buttons">
+        <button class="button" type="submit" id="register" name="register" onclick="validate()">Register</button>
+        <button class="reset-button" type="reset" id="clear" name="clear">Clear</button>
+      </div>
+      </form>
+      <h2>Festival Schedule</h2>
+      <div id="output"></div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="paragraph-footer">&copy; 2021 - Mariana Souza - CS213 - Section 4</p>
+
+      <ul class="footer-links">
+        <li class="footer-link">Contact us:</li>
+        <li class="footer-link"><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png"
+              alt="Facebook Icon"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png"
+              alt="Instagram Icon"></a></li>
+        <li class="footer-link"><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img
+              src="../gmail.png" alt="Gmail Icon"></a></li>
+      </ul>
+    </div>
+    <div class="credits">
+      <span>Photo by Mariana Lopes</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

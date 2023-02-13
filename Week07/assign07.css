@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    background-color: rgb(5, 5, 92);
+}
+nav ul {
+    margin-left: -8em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul a {
+    padding: 0.8em;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+main p {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 2em;
+}
+
+.main-container {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-image {
+    margin-left: 3em;
+    
+}
+main img{
+    box-shadow: -9px 9px 9px rgba(5, 5, 92, 0.8);
+}
+.calculator_form {
+    display: flex;
+    align-items: center;
+}
+.definition{
+    margin-bottom: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    color: red;
+}
+.first-row {
+    margin-bottom: 1em;
+}
+
+.second-row {
+    margin-bottom: 1em;
+}
+
+.third-row {
+    margin-bottom: 1em;
+}
+
+input::placeholder{
+    color: rgb(5, 5, 92);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+input:required{
+    border: 2px dashed red;
+}
+
+input{
+    max-width: 200px;
+    margin-left: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border-color: rgb(172, 167, 167);
+}
+#term:focus, #apr:focus, #amount:focus{
+    border: 2px solid rgb(8, 8, 230);
+}
+
+.button{
+    margin-top: 3em;
+    background-color: rgb(5, 5, 92);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#error{
+    margin-top: 1em;
+    color: red;
+}
+
+
+.reset-button{
+    margin-left: 1em;
+    background-color: rgb(5, 5, 92);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(5, 5, 92); 
+    color: white;
+    margin-top: 10em;
+}
+.footer{
+    display: flex;
+    align-items: center;
+  
+}
+.footer-links{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin-left: 4em;
+}
+.paragraph-footer{
+    flex: 1;
+    text-align: center;
+}
+.footer-link{
+    margin: 0 4em 2em 0;
+    padding-top: 2em;
+}
+.credits{
+    font-size: 0.9em;
+    font-weight: 200;
+    margin-top: 1em;
+    margin-left: 1em;
+    text-align:left;
+}
+.credits a {
+    color: white;
+    text-decoration: none; 
+}
+
+/*small 600px or smaller-----------*/
+@media only screen and (max-width: 600px) {
+
+    body, main, footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    nav ul{
+        margin-left: 0;
+        display: block;  
+       
+    }
+    nav ul li{
+        display: block;
+        padding: 2em;
+    }
+    nav ul a{
+        font-size: 1.2em;
+    }
+
+    .main-container, .footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .mortgage-calculator{
+        margin-left: 1em;
+    }
+    .footer-links{
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+
+}
+
+/*medium 600px or bigger----------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1200px) {    
+    body, main, footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .main-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .main-container img{
+        max-width: 100%;
+        width: 100%;
+     
+    }
+    nav ul{
+        margin-left: -6em;
+    }
+    nav ul a{
+        font-size: 1em;
+    }
+    .mortgage-calculator{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}

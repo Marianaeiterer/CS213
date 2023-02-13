@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariana Souza's Assignments</title>
+  <link type="text/css" rel="stylesheet" href="assign11.css" />
+  <script defer src="assign11.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="assign11.html">Home</a></li>
+        <li><a href="#">Models</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Dresses</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Wedding Shoes</h1>
+    <h2>Winter Sales</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sem sit amet turpis varius posuere in ut
+      elit. Sed dignissim eros eu varius vehicula. Morbi non orci sit amet lorem vulputate lobortis. Mauris tincidunt,
+      augue at facilisis viverra, tortor justo pharetra sapien, ut efficitur nibh lectus pulvinar ipsum. Etiam porttitor
+      ac magna eu laoreet. Suspendisse potenti. Aenean a massa luctus, euismod turpis id, dignissim odio. Quisque dictum
+      dolor in mauris porta ullamcorper. Curabitur et facilisis mauris, non porta odio. Pellentesque sagittis varius
+      finibus. Pellentesque porta lacus eleifend dolor varius, in vehicula urna ultrices.</p>
+    <div class="main-container">
+        <form id="form" name="calculator_form" action="assign11.php" method="GET">
+          <div class="shoes">
+            <h2>Choose your shoes</h2>
+          <div class="items">
+            <div class="box">
+              <input type="checkbox" id="item_0" name="check_list[]" value="110" onclick="is_checked()"
+                onchange="is_checked()">
+              <label for="item_0"><img src="shoes1.jpg" alt="shoes"></label>
+              <div class="shoes_value">Shoes 1 - $110</div>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="item_1" name="check_list[]" value="70" onclick="is_checked()"
+                onchange="is_checked()">
+              <label for="item_1"><img src="shoes2.jpg" alt="shoes"></label>
+              <div class="shoes_value">Shoes 2 - $70</div>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="item_2" name="check_list[]" value="150" onclick="is_checked()"
+                onchange="is_checked()">
+              <label for="item_2"><img src="shoes3.jpg" alt="shoes"></label>
+              <div class="shoes_value">Shoes 3 - $150</div>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="item_3" name="check_list[]" value="90" onclick="is_checked()"
+                onchange="is_checked()">
+              <label for="item_3"><img src="shoes4.jpg" alt="shoes" class="item3"></label>
+              <div class="shoes_value">Shoes 4 - $90</div>
+            </div>
+          </div>
+          <div class="total_box">
+            <label>Total<input type="text" id="total" name="total" readonly></label>
+          </div>
+      </div>
+      <div class="user-information">
+        <h3>Personal Information</h3>
+        <div class="definition">(Required fields are in red)</div>
+        <div>
+          <label>First Name <input type="text" id="first_name" name="first_name" onchange="validate_name()"
+              oninput="validate_name()" required></label>
+          <div id="error_name"></div>
+        </div>
+        <div>
+          <label>Last Name <input type="text" id="last_name" name="last_name" onchange="validate_lname()"
+              oninput="validate_lname()" required></label>
+          <div id="error_lname"></div>
+        </div>
+        <div>
+          <label>Phone<input type="tel" id="phone" name="phone" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="208-555-5555" required></label>
+          <div id="error_phone"></div>
+        </div>
+        <div>
+          <label>Address<textarea id="address" name="address" rows="4" cols="5" maxlength="100"
+              placeholder="Street address, City, State, Zip Code" onchange="validate_address()"
+              oninput="validate_address()" required></textarea></label>
+          <div id="error"></div>
+        </div>
+      </div>
+      <div class="credit-card">
+        <h3>Confirm Purchase</h3>
+        <div class="type-container">
+          <div>
+            <input type="radio" class="radio" id="visa" name="card" value="Visa">
+            <label for="visa"><img src="symbols.png" alt="visa_card"></label>
+          </div>
+          <div>
+            <input type="radio" class="radio" id="mastercard" name="card" value="Mastercard">
+            <label for="mastercard"><img src="mastercard.png" alt="martercard_card"></label>
+          </div>
+
+          <div>
+            <input type="radio" class="radio" id="american" name="card" value="American Express">
+            <label for="american"><img src="american-express.png" alt="maerican_card"></label>
+          </div>
+        </div>
+        <div class="card-information">
+          <div class="card_number">
+            <label for="credit_card">Credit Card Number</label>
+            <input type="tel" id="credit_card" name="credit_card" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+              maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+            <div id="error_card"></div>
+          </div>
+          <div class="expiration">
+            <label>Expiration Date</label>
+            <input type="text" name="exp_date" id="exp_date" maxlength="7" placeholder="MM/YYYY"
+              pattern="^(0[1-9]|1[0-2])\/{1}(202[1-9]|[2-9]{1}0[3-9]{1}[0-9]{1}|[2-9]{1}[1-9]{1}[0-9]{2})$" required />
+          </div>
+          <div id="error2"></div>
+        </div>
+        
+        <div class="buttons">
+          <button class="button" type="submit" name="validate" id="validate">Make Payment</button>
+          <input class="reset-button" type="reset" id="reset" name="reset" value="Reset">
+        </div>
+      </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="paragraph-footer">&copy; 2021 - Mariana Souza - CS213 - Section 4</p>
+
+      <ul class="footer-links">
+        <li class="footer-link">Contact us:</li>
+        <li class="footer-link"><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png"
+              alt="Facebook Icon"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png"
+              alt="Instagram Icon"></a></li>
+        <li class="footer-link"><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img
+              src="../gmail.png" alt="Gmail Icon"></a></li>
+      </ul>
+    </div>
+    <div class="credits">
+      <span>Photo by <a
+          href="https://unsplash.com/@tierramallorca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tierra
+          Mallorca</a> on <a
+          href="https://unsplash.com/s/photos/mortgage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

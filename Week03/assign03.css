@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans+Condensed:wght@300&display=swap');
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.paragraph-footer{
+  font-size: 12px;
+  text-align: center;
+  
+}
+h1{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  
+}
+h2{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.right-img{
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 200px;
+  }
+  #classes{
+    display: inline-block;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 100%;
+  }
+  .footer{
+    
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 40% 0;
+    max-width: 200px;
+  }

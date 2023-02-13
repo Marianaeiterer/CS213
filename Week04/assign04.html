@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ka Store</title>
+    <link type="text/css" rel="stylesheet" href="assign04.css"/>
+    <style>
+      
+      .home-left-img{
+        width: 25%;
+        height: 20%;
+        float: left;
+        margin-left: 3em;
+      }
+      .home-paragraph-1{
+        font-family: 'Open Sans Condensed', sans-serif; 
+        text-align: center;
+        display: inline-block;
+        text-align: left;
+        width: 20em;
+        height: 50%;
+        padding-top: 1em;
+        margin: 0 2em;
+        font-size: 2em;
+      }
+      section{
+        display: block;
+        margin: 3em auto 0;
+        background-color: rgb(248, 213, 237);
+      }
+      section img{
+        width: 15em;
+        height: 17em;
+        margin: 2em 2em 2em 2em;
+        cursor: pointer;
+        border-radius: 10%;
+      }
+      #section-button{
+        background-color: rgb(36, 161, 124);
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        margin: 0 6em 1em 85em;
+        text-align: center;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .home-grid{
+        display: block;
+        padding-top: 2em;              
+      }
+   
+    </style>
+
+</head>
+<body>
+  <header id="home">
+    <div>
+      <a href="assign04.html"><img id="logo" src="logo.jpeg" alt="logo Kastore"></a>
+    </div>
+    <span id="nav-search-middle">
+      <input type="search" id="search" name="search"> 
+      <input type="submit" id="button" value="Search">
+      <img id="icon-1" src="shopping-cart.png" alt="Shopping cart">
+      <img id="icon-2" src="profile-user.png" alt="Shopping cart">
+    </span>
+    <nav class="menu">
+      <ul>
+        <li><a href="assign04.html">Home</a></li>
+        <li><a href="#home-headline-1">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assign04_2.html" target="_blank">Clothes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="home-grid">
+      <h1 id="home-headline-1">Welcome my friends</h1>
+      <img class="home-left-img" src="first.jpeg" alt="Girl">
+      <p class="home-paragraph-1">
+        Hey!
+      </p>
+      <p class="home-paragraph-1">
+        I'm Karen Vasco, I'm from Juiz  de Fora, Minas Gerias! 
+        And this is my store, my entrepreneurial dream that gradually became a reality!
+      </p>
+      <p class="home-paragraph-1">  
+        I'm so happy to have you here, and I'm glad you chose our store to be with you in some of your moments and adventures!
+        I love to be part of your life; I hope you find what you are looking for, and I'm sure you will look amazing wearing our style! <img src="../Week03/wink.png" alt="wink face">
+      </p>
+    </div>
+    <section class="home-clothes">
+      <h2>Recommended For You</h2>
+        <img src="img1.jpeg" alt="shirt">
+        <img src="img2.jpeg" alt="shirt">
+        <img src="img3.jpeg" alt="shirt">
+        <img src="img4.jpeg" alt="shirt">
+        <form method="get" action="assign04_2.html">
+          <button id="section-button" type="submit">More</button>
+        </form>        
+    </section>
+  </main>
+  <footer id="footer">
+    <form method="get" action="#home">
+      <button class="button-footer" type="submit">Back To The Top</button>
+    </form> 
+      <p id="contact">Contact us:</p>
+      <ul>
+        <li><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png" alt="Facebook Icon"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png" alt="Instagram Icon"></a></li>
+        <li><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img src="../gmail.png" alt="Gmail Icon"></a></li>
+        <li><a href="https://web.whatsapp.com/" target="_blank"><img src="../whatsapp.png" alt="Whatsapp Icon"></a></li>
+      </ul>
+      <p class="copyright">
+        &copy; 2021 - Mariana Souza - CS 213 - Section 4
+      </p>
+    <div>Icons made by<a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www              .flaticon.com</a>
+    </div>
+  </footer>
+</body>
+</html>
+  

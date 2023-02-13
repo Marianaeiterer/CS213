@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    background-color: rgba(230, 60, 148,0.9);
+}
+nav ul {
+    margin-left: -8em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul a {
+    font-size: 1.1em;
+    padding: 0.8em;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+h2{
+    margin-left: 2em;
+    font-size: 2em;
+    font-weight: 300; 
+}
+h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300; 
+}
+
+main p {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 2em;
+    margin-top: -1em;
+}
+
+.main-container{
+    background-color: rgba(230, 60, 148, 0.3);
+    margin-top: 4em;
+    padding: 7%;
+}
+.main-container h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+   
+}
+.items img{
+    position: relative;
+    width: 210px;
+    height: 240px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(230, 60, 148);  
+}
+.box{
+    background-color: white;
+   
+}
+.box .shoes_value{
+    margin: 0.8em 0 0 1em;
+}
+.item3{
+    max-width: 100%;
+    width: 100%;
+}
+
+#total{
+    border-color: black;
+    max-width: 300px;
+    width: 100%;  
+    padding: 0.6em; 
+    margin-left: 1em;
+}
+.total_box label{
+    font-size: 1.2em;
+}
+.total_box{
+    max-width: 700px;
+    background-color: #fff;
+    margin: 2em auto 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    color: black;
+}
+.shoes{
+    background-color: white;
+    max-width: 100%;
+    width: 100%;
+    padding: 2em;
+    margin-left: -2em;
+}
+.user-information{
+    max-width: 70%;
+    background-color: #fff;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 20px;
+    color: black;
+}
+.user-information label{
+    font-size: 1.1em;
+}
+
+.user-information input:required, textarea:required{
+    border: 2px dashed red;
+}
+
+input[type="checkbox"]{
+    position: relative;
+
+}
+.user-information input, textarea{
+    display: block;
+    max-width: 50%;
+    margin-bottom: 3em;
+    width: 100%;
+    padding: 0.5em;
+    resize: none;
+}
+textarea::placeholder{
+    color: rgba(5, 5, 92, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+  
+}
+#phone::placeholder{
+    color: rgba(5, 5, 92, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+#phone:invalid{
+    border: 2px dashed red;
+
+}
+#phone:valid{
+    border: 2px dashed rgb(57, 206, 131);
+}
+.credit-card{
+    max-width: 70%;
+    background-color: #fff;
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 20px;
+    color: black;
+}
+.card-information label{
+    display: block;
+}
+#credit_card{
+    width: 60%;
+    line-height: 35px;
+    height: auto;
+    padding: 0 1em;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+    margin: 0.8em auto 2em auto;
+}
+#credit_card::placeholder{
+    color: rgba(5, 5, 92, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+}
+#credit_card:required{
+    border: 2px dashed red;
+}
+#credit_card:invalid{
+    border: 2px dashed red;
+}
+#credit_card:valid{
+    border: 2px dashed rgb(57, 206, 131);
+}
+#exp_date{
+    width: 18%;
+    line-height: 35px;
+    height: auto;
+    padding: 0 1em;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    margin: 0.8em auto 2em auto;
+}
+#exp_date::placeholder{
+    color: rgba(5, 5, 92, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+#exp_date:required{
+    border: 2px dashed red;
+}
+#exp_date:invalid{
+    border: 2px dashed red;
+}
+#exp_date:valid{
+    border: 2px dashed rgb(57, 206, 131);
+}
+
+.card-information {
+    
+    font-size: 1.2em;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.type-container{
+    width: 40%;
+    display: flex;
+}
+.type-container img{
+    position: relative;
+    margin-bottom: -1.5em;
+}
+
+.button{
+    background-color: rgb(230, 60, 148);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#error{
+    color: red;
+    font-size: 0.9em;
+}
+#error_name,#error_lname,#error_phone,#error, #error_card,#error2{
+    color: red;
+    font-size: 0.8em;
+    margin-top: -2em;
+    position: absolute;
+}
+.reset-button{
+    margin-left: 1em;
+    background-color: rgb(230, 60, 148);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: rgba(230, 60, 148,0.9); 
+    color: white;
+    padding: 1em;
+}
+.footer{
+    display: flex;
+    align-items: center;
+  
+}
+.footer-links{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin-left: 4em;
+}
+.paragraph-footer{
+    flex: 1;
+    text-align: center;
+}
+.footer-link{
+    margin: 0 4em 2em 0;
+    padding-top: 2em;
+}
+.credits{
+    font-size: 0.9em;
+    font-weight: 200;
+    margin-top: 1em;
+    margin-left: 1em;
+    text-align:left;
+}
+.credits a {
+    color: white;
+    text-decoration: none; 
+}
+
+.definition{
+    margin-bottom: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    color: red;
+}
+
+/*small 600px or smaller-----------*/
+@media only screen and (max-width: 600px) {
+    body, main, footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    nav ul{
+        margin-left: 0;
+        display: block;  
+       
+    }
+    nav ul li{
+        display: block;
+        padding: 2em;
+    }
+    nav ul a{
+        font-size: 1.2em;
+    }
+
+    .main-container, .footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .items{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .box{
+        background-color: white;
+        margin-bottom: 1.5em; 
+    }
+    .items img{
+        max-width: 100%;
+        margin: auto;
+        border-top: 1px solid rgb(230, 60, 148);
+        box-shadow: 5px 5px 5px rgb(230, 60, 148);
+    }
+    .box .shoes_value{
+        font-size: 1.2em;
+        
+        margin: 0.8em 0 0.8em 1em;
+    }
+    .box{
+        margin: auto;
+    }
+    
+    .user-information{
+        max-width: 80%;
+    }
+    .user-information label{
+        font-size: 1.2em;
+    }
+    
+    .user-information input, textarea{
+        max-width: 90%;
+    }
+    .credit-card{
+        max-width: 80%;
+       
+    }
+    
+    #credit_card{
+        width: 90%;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+    }
+    #credit_card::placeholder{
+        font-size: 1em;
+        letter-spacing: 0.4em;
+    }
+
+    #exp_date{
+        width: 50%;
+    }
+    #exp_date::placeholder{
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+    
+    .card-information {
+        font-size: 1.1em;
+        margin-top: 1em;
+    }
+    .type-container{
+        width: 100%;
+    }
+    .footer-links{
+        max-width: 100%;
+        margin-left: -0.7em;
+    }
+    #error_phone{
+        font-size: 0.65em;
+        margin-top: -3em;
+    }
+    #error_card{
+        font-size: 0.60em;
+    }
+}
+
+/*medium 600px or bigger----------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1200px) {    
+    body, main, footer{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .main-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    nav ul{
+        margin-left: -8em;
+        
+    }
+    nav ul a{
+        font-size: 1em;
+        
+    }
+    .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .items img{
+        max-width: 100%;
+    }
+    
+    .user-information{
+        max-width: 70%;
+        width: 70%;
+    }
+    .user-information label{
+        font-size: 1em;
+    }
+    
+    .user-information input, textarea{
+        display: block;
+        max-width: 70%;
+    }
+
+    .credit-card{
+        max-width: 100%;
+        width: 70%;
+    }
+    
+    #credit_card{
+        width: 80%;
+        letter-spacing: 0.3em;
+    }
+    #credit_card::placeholder{
+        font-size: 1em;
+        letter-spacing: 0.4em;
+    }
+    #exp_date{
+        width: 30%;
+    }
+    #exp_date::placeholder{
+        font-size: 0.9em;
+    }
+    
+    .card-information {
+        font-size: 1em;
+    }
+    .type-container{
+        width: 100%;
+    }
+    .type-container img{
+        width: 72%;
+        position: relative;
+        margin-bottom: -1.5em;
+    }
+    
+    .button{
+        background-color: rgb(230, 60, 148);
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #error_phone{
+        font-size: 0.7em;
+        margin-top: -3em;
+    }
+    #error_card{
+        font-size: 0.7em;
+    }
+}

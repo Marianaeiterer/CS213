@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mortgage, Calculator, Rate, Loan, Amount">
+  <meta name="description" content="Calculate your Mortgage in a simple and efficient way.">
+  <title>Mortgage Calculator</title>
+  <link type="text/css" rel="stylesheet" href="assign07.css" />
+  <script defer src="assign07.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="assign07.html">Home</a></li>
+        <li><a href="#">Rates</a></li>
+        <li><a href="#">Save Money</a></li>
+        <li><a href="#">Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Calculate your Mortgage</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sem sit amet turpis varius posuere in ut
+      elit. Sed dignissim eros eu varius vehicula. Morbi non orci sit amet lorem vulputate lobortis. Mauris tincidunt,
+      augue at facilisis viverra, tortor justo pharetra sapien, ut efficitur nibh lectus pulvinar ipsum. Etiam porttitor
+      ac magna eu laoreet. Suspendisse potenti. Aenean a massa luctus, euismod turpis id, dignissim odio. Quisque dictum
+      dolor in mauris porta ullamcorper. Curabitur et facilisis mauris, non porta odio. Pellentesque sagittis varius
+      finibus. Pellentesque porta lacus eleifend dolor varius, in vehicula urna ultrices.</p>
+    <p>Phasellus consectetur quam mi. Nulla odio quam, placerat eget nunc eget, porttitor accumsan nulla. Maecenas
+      tincidunt sagittis sagittis. Sed arcu nisi, gravida ut molestie at, venenatis vitae elit. Nam vitae velit a libero
+      malesuada egestas. Aenean interdum rhoncus imperdiet. Maecenas vestibulum sem magna, eu maximus magna ultricies
+      non. Aenean vitae lacus eros. In ornare, metus at viverra faucibus, tortor justo vestibulum ex, ornare auctor
+      justo mauris a nisi.</p>
+    <div class="main-container">
+      <div class="main-image">
+        <img src="mortgage.jpg" alt="House">
+      </div>
+      <div class="mortgage-calculator">
+        <h2>Calculator</h2>
+        <div class="definition">(Required fields are in red)</div>
+        <form id="form" name="calculator_form" action="/" method="GET">
+          <div class="first-row">
+            <label>APR (Annual Percentage Rate) : <input type="text" id="apr" name="apr" placeholder="%"
+                onchange="validate_apr()" oninput="validate_apr()" required></label>
+          </div>
+          <div class="second-row">
+            <label>Loan Term (in years):<input type="text" id="term" name="term" placeholder="Years"
+                onchange="validate_term()" oninput="validate_term()" required></label>
+          </div>
+          <div class="third-row">
+            <label>Loan Amount (in dollars): <input type="text" id="amount" name="amount" placeholder="$"
+                onchange="validate_amount()" oninput="validate_amount()" required></label>
+          </div>
+          Montly Payment: <input type="text" id="payment" name="payment" readonly>
+          <div id="error"></div>
+          <div class="buttons">
+            <button class="button" type="button" id="calculate">Calculate Payment</button>
+            <input class="reset-button" type="reset" id="clear" name="clear" value="Reset">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="paragraph-footer">&copy; 2021 - Mariana Souza - CS213 - Section 4</p>
+
+      <ul class="footer-links">
+        <li class="footer-link">Contact us:</li>
+        <li class="footer-link"><a href="https://www.facebook.com/" target="_blank"><img src="../facebook.png"
+              alt="Facebook Icon"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/" target="_blank"><img src="../instagram.png"
+              alt="Instagram Icon"></a></li>
+        <li class="footer-link"><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><img
+              src="../gmail.png" alt="Gmail Icon"></a></li>
+      </ul>
+    </div>
+    <div class="credits">
+      <span>Photo by <a
+          href="https://unsplash.com/@tierramallorca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tierra
+          Mallorca</a> on <a
+          href="https://unsplash.com/s/photos/mortgage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

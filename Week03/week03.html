@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang = "en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* #0 */
+        body { 
+          font-size:36px; 
+        }
+        h1 {
+          -webkit-text-emphasis: filled red;
+          text-shadow: 0px 2px 5px black;
+          padding-top: 0px;
+          padding-right: 1px;
+          padding-bottom: 0px;
+          padding-left: 1px;
+          color: black;
+        }
+        h3 {
+          border: solid rgb(252, 2, 2, 0.9);
+          padding: 5px;
+          width: 200px;
+          background-color: black;
+          color: white;
+        }
+        li {
+          box-shadow: 2px 3px 8px blue;
+          padding: 5px;
+          width: 300px;
+        }
+        p {
+          font: italic 28px Georgia, serif;
+        }
+        #sidebar {
+          width: 1200px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: black;
+          background: rgb(243, 213, 81);
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 30px;
+          padding-right: 30px;
+        } 
+        #text {
+          width: 1200px;
+          border-width: 1px;
+          border-style:solid;
+          border-color:black;
+          background: rgb(243, 213, 81);
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }    
+        #title {
+          width: 1200px;
+          padding-right: 30px;
+          padding-bottom: 0px;
+          padding-left: 30px;
+          padding-right: 30px;
+        } 
+        #menuBar {
+          width: 1200px;
+          padding-top: 0px;
+          padding-right: 30px;
+          padding-bottom: 0px;
+          padding-left: 80px;
+        } 
+        #bottom {
+          width: 1200px;
+          border-width: 1px;
+          border-style:solid;
+          border-color:black;
+          background: rgb(75, 253, 5);
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }    
+        a:link, a:visited {
+          background-color: #2B06FC;
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          padding: 15px 30px;
+          display: inline-block;
+        }
+       .page1{
+           color: rgb(255, 13, 13);
+       }
+       
+	</style>
+    <style> /* #1 */
+       body { 
+           font-size:16px;
+           background-color: rgba(218, 245, 65, 0.4);
+        }
+        #title{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #menuBar{
+            color: navy;
+            position: fixed; 
+            top: 0;
+            right: 0;
+            width: 200px;
+            border: 5px solid green;
+        }
+        #sidebar{
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            position: fixed;
+            bottom: 25px;
+            padding: 5px;
+        }
+        #text{
+            position: fixed;
+            top: 200px;
+        }
+        #text a{
+            font-family: monospace;
+            font-size: larger;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            overflow: hidden;
+            padding: 20px;
+            display: inline-block;
+        }
+        #text a:hover{
+            background-color: teal;
+        }
+        #bottom{
+            font-style: italic;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 5px;
+        }
+        .page2{
+           color: rgb(255, 13, 13);
+       }
+	</style>
+    <style> /* #2 */
+	   body { 
+           font-size:12px; 
+           background-color: aqua;
+       }
+       .page3{
+           color: rgb(255, 13, 13);
+       }
+       #menuBarList{
+           font-style: italic;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       h1{
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           color: rgba(248, 11, 11, 0.9);
+       }
+       p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        float: left;
+        border: transparent thin solid;
+        padding: 10px;
+        margin: 10px;
+        max-width: 200px;
+       }
+       #sidebar{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        float: right;
+        border: transparent thin solid;
+        padding: 0px;
+        margin: 10px 0px 0px 0px;
+        max-width: 200px;
+       }
+       #bottom{
+        position:absolute;
+        padding: 10px;
+        margin: 390px 0px 0px 30px;
+       }
+
+
+	</style>
+    <style> /* #3 */
+      body {
+        background-color: black;
+        color: rgb(252, 252, 252);
+        }
+      h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+      }
+      li {
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: rgba(136, 255, 0, 0.863) 3px 3px 15px ;
+        padding: 5px;
+        width: 100px;
+      }
+      p {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+      h2 {
+        border: inset; background-color: aquamarine;
+        text-align: center; color: brown;
+      }
+      h3 {
+        box-shadow: 3px 3px 10px;
+        border: groove; background-color: blueviolet;
+        text-align: center;
+      } 
+      .page4{
+       color: rgb(255, 13, 13);
+      }
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            		and even the layout of the page.You can change the layout of this page by selecting different 
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Styles</h1>
+            <p class="page1">StyleSheet 1: Contributed by Luis A. Cedeno: Work on the style sheet  1 section. The text was modified under "h1" tag with a red dot color over each letter with black shadow. The "h3" tag was modified with a red border around the word "Grading" with black background color and text in white color. In the "li" tag list, a box-shadow property was added with blue color projecting in the bottom and left side of each name from that list.
+               Hole text following "p" tag also was changed given Italic, Georgia, and Serif text styles. Body background color, the direction of text, border size, and padding spaces were modified in each of the "id" tags sections under the following names: "sidebar", "text", "title" or "menuBar".  Finally, a button for each "Stylesheet" link was created with a background in blue color, text in White color, including padding space to center it in a block.  
+               You can see my modification by giving a click on the Stylesheet1 link.</p>
+            <p class="page2">StyleSheet 2: The contributor was Cameron Gualco. He added a backgroud color with transparancy to the page. Added different fonts, font styles and text color.
+              He adjusted the layout using the position property. He also added padding, margins, and a border. The layout use the fixed property, and it's a better visual in a 75% or less zoom browser page.
+              He also used the hover selector to change the stylesheet links</p>
+            <p class="page3">StyleSheet 3: The contributor was Mariana Lopes. She added a background color to the page and it contains three different fonts - Times New Roman, Gill Sans, and Lucida Sans. 
+                The layout is changed she used the properties, float, margin, padding, max-width, and display, to change the way the text would display on the screen. 
+                She also added red color to each stylesheet selected, which means that 
+                the stylesheet the user clicks on, the text describing the characteristics will be red. 
+            </p>
+            <p class="page4">StyleSheet 4:Contributed by Miguel A. Martinez R .: Work on style sheet 4, with a dark background to highlight the letters, a dark style, but only to make a drastic change, white letters and most of the texts centered.
+              The lists with italic letters, Arial family green background with filling. Headers (h3) Courier New font family with blue-violet borders. Paragraphs with italics, Franklin Gothic Medium, Arial.</p>
+            <p class="page5">No Style: This stylesheet don't have any css added, just the default properties.</p>
+
+         </div> <!-- text -->
+         
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+            		and how you helped your classmates. This means your contribution needs to be briefly described 
+                    on the page.</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by MobaXTerm </div>
+      </div> <!-- document -->
+      
+      
+      <script>   
+        //DISABLE STYLES: This function turns off the four stylesheets
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		//APPLY STYLES: This function turns off all four stylesheets, then turns one back on
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>
